@@ -14,7 +14,11 @@ pipeline {
                      }
                  }
 
-
+                 stage('War upload to Nexus'){
+                     steps{
+                         sh 'mvn clean package'      
+                     }
+                 }
 
 
     }
