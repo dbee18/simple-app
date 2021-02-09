@@ -16,7 +16,7 @@ pipeline {
        
        stage('upload war to naxus'){
             steps{
-                'hello'           
+                ///           
             }
         }
 
