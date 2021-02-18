@@ -8,12 +8,12 @@ pipeline {
          }
     
     stages{
-       
+                  /**
                   stage("checkout git"){
                         steps{
                            git 'https://github.com/dbee18/simple-app.git'
                         }
-                    }
+                    }**/
 
                  stage('Build'){
                      steps{
