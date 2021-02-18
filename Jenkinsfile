@@ -1,7 +1,7 @@
 pipeline {
    agent any
    tools {
-             maven 'maven3'
+             maven 'Maven-3.6.3'
          }
    options {
                 buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '5', numToKeepStr: '7')
@@ -13,7 +13,7 @@ pipeline {
                          sh 'mvn clean package'      
                      }
                  }
-
+                 /***
                  stage('War upload to Nexus'){
                      steps{
                           script{
@@ -38,7 +38,7 @@ pipeline {
                           }   
                      }
                  }
-
+                **/
 
     }
 }
