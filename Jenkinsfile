@@ -15,7 +15,7 @@ pipeline {
                         }
                     }**/
 
-                 stage('Build'){
+                 stage('Build krooo'){
                      steps{
                          sh 'mvn clean package'      
                      }
